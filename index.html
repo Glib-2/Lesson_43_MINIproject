@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CINEVA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header class="header">
         <h2 class="main_title">CINEVA</h2>
+
         <nav>
             <ul>
                 <li><a href="#">Головна</a></li>
@@ -19,12 +21,15 @@
             </ul>
         </nav>
     </header>
+
     <main class="catalog">
+
         <section class="hero">
-            <h1 class="hero_title">Найкращій Каталог Фільмів</h1>
+            <h1 class="hero_title">Найкращий Каталог Фільмів</h1>
             <strong class="strong">Відкрий світ кіно з добірками, створеними спеціально для тебе.</strong>
             <button class="button">Дізнатись більше</button>
         </section>
+
         <div class="buttons">
             <button class="button_2">Всі</button>
             <button class="button_2">Жахи</button>
@@ -34,54 +39,62 @@
             <button class="button_2">Комедія</button>
             <button class="button_2">Боєвик</button>
         </div>
+
         <div class="catalog_grid">
+
             <div class="card">
-                <div class="car_poster">
-                    <img src="./Images/Stranger_Things.webp" width="200px">
+                <div class="card_poster">
+                    <img src="./Images/Stranger_Things.webp">
+
                     <div class="bublik">
-                        <button class="btn-open">Більше</button>
-
-                        <div class="backdrop" data-modal>
-                            <div class="modal">
-                                <button class="btn-close" data-modal-close>✕</button>
-
-                                <div class="position">
-                                    <h2>Stranger Things</h2>
-                                    <p>Вміст модального вікна...</p>
-                                    <button class="qwe">buy</button>
-                                </div>
-                            </div>
-                        </div>
+                        <button class="btn-open" data-modal-open>Більше</button>
                     </div>
                 </div>
             </div>
+
             <div class="card">
                 <div class="card_poster">
-                    <img src="./Images/Harry_Potter.webp" width="200px">
+                    <img src="./Images/Harry_Potter.webp">
                 </div>
             </div>
+
             <div class="card">
                 <div class="card_poster">
-                    <img src="./Images/Dumb_n_Dumber.webp" width="200px">
+                    <img src="./Images/Dumb_n_Dumber.webp">
                 </div>
             </div>
+
             <div class="card">
                 <div class="card_poster">
-                    <img src="./Images/Bad_Boys.webp" width="200px">
+                    <img src="./Images/Bad_Boys.webp">
                 </div>
             </div>
+
             <div class="card">
                 <div class="card_poster">
-                    <img src="./Images/Hail_Mary.webp" width="200px">
+                    <img src="./Images/Hail_Mary.webp">
                 </div>
             </div>
+
             <div class="card">
                 <div class="card_poster">
-                    <img src="./Images/Scream.webp" width="200px">
+                    <img src="./Images/Scream.webp">
                 </div>
             </div>
+
         </div>
     </main>
+
+    <div class="backdrop" data-modal>
+        <div class="modal">
+            <button class="btn-close" data-modal-close>✕</button>
+
+            <div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
 </body>
 
