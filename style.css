@@ -58,7 +58,7 @@ nav ul {
 }
 
 .main_title {
-    font-family: "Nunito", sans-serif;
+    font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -152,87 +152,122 @@ main {
 }
 
 .card {
-    width: 200px;
-    overflow: hidden;
-    border-radius: 16px;
-}
-
-.card_poster {
     position: relative;
-}
-
-.card_poster img {
-    width: 100%;
+    width: 200px;
+    transition-property: border, size;
+    transition-duration: 1s;
 }
 
 .bublik {
     position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    width: 200px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.5);
     display: none;
-    justify-content: center;
-    align-items: center;
 }
 
 .card:hover .bublik {
-    display: flex;
+    display: block;
+}
+
+.card:hover{
+    border: 15px var(--border-color);
 }
 
 .btn-open {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
+    margin-top: 130px;
+    margin-right: 20px;
+    margin-left: 17px;
+    border-radius: 15px;
+    padding: 8px 8px 8px 8px;
+    border: 0px;
+    background-color: var(--3-background);
+    color: var(--border-color);
+}
+
+.btn-close{
+    background-color: var(--border-color);
+    border: 0px;
+    color: var(--3-background);
+    padding: 8px 8px 8px 8px;
 }
 
 .backdrop {
     position: fixed;
-    inset: 0;
-    background: rgba(73, 93, 179, 0.75);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(71, 62, 155, 0.5);
 }
 
-.backdrop.is-open {
-    display: flex;
+.is-hidden {
+    display: none;
 }
 
 .modal {
     width: 700px;
     height: 350px;
     background: var(--2-background);
-    color: white;
-    padding: 30px;
-    border-radius: 20px;
-    position: relative;
-
+    margin: 100px auto;
+    padding: 20px;
+    transform: translate(-50% -50%);
+    margin-top: 300px;
+    border-radius: 5px;
 }
 
-.btn-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: var();
-    border: 0px;
-}
-
-.catalog_grid {
+.catalog_grid{
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 60px;
+    
+}
+
+.card_poster{
+    text-align: center;
+    background-color: var(--border-color);
+    border-radius: 10px;
+}
+
+h3{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4, p{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20;
+    margin: 0px;
+    color: var(--border-color);
+}
+
+.divs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
     margin: 50px 50px 50px 50px;
 }
 
-.card {
-    width: 200px;
-    height: 300px;
-    margin-bottom: 70px;
+.h4s, .ps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
-.card_poster img {
-    width: 200px;
-    height: 300px;
+.h4s h4, .ps p {
+    margin: 0;
+    font-size: 20px;
+}
+
+img{
+    border-radius: 10px;
 }

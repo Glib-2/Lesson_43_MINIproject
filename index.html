@@ -1,101 +1,239 @@
-<!DOCTYPE html>
-<html lang="uk">
+<<!DOCTYPE html>
+    <html lang="uk">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CINEVA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CINEVA</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
+    <body>
+        <header class="header">
+            <h2 class="main_title">CINEVA</h2>
 
-    <header class="header">
-        <h2 class="main_title">CINEVA</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Фільми</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
-            <ul>
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Фільми</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
-    </header>
+        <main class="catalog">
 
-    <main class="catalog">
+            <section class="hero">
+                <h1 class="hero_title">Найкращий Каталог Фільмів</h1>
+                <strong class="strong">Відкрий світ кіно з добірками, створеними спеціально для тебе.</strong>
+                <button class="button">Дізнатись більше</button>
+            </section>
 
-        <section class="hero">
-            <h1 class="hero_title">Найкращий Каталог Фільмів</h1>
-            <strong class="strong">Відкрий світ кіно з добірками, створеними спеціально для тебе.</strong>
-            <button class="button">Дізнатись більше</button>
-        </section>
+            <div class="buttons">
+                <button class="button_2">Всі</button>
+                <button class="button_2">Жахи</button>
+                <button class="button_2">Фантастика</button>
+                <button class="button_2">Наукова Фантастика</button>
+                <button class="button_2">Пригоди</button>
+                <button class="button_2">Комедія</button>
+                <button class="button_2">Боєвик</button>
+            </div>
 
-        <div class="buttons">
-            <button class="button_2">Всі</button>
-            <button class="button_2">Жахи</button>
-            <button class="button_2">Фантастика</button>
-            <button class="button_2">Наукова Фантастика</button>
-            <button class="button_2">Пригоди</button>
-            <button class="button_2">Комедія</button>
-            <button class="button_2">Боєвик</button>
-        </div>
+            <div class="catalog_grid">
 
-        <div class="catalog_grid">
-
-            <div class="card">
-                <div class="card_poster">
-                    <img src="./Images/Stranger_Things.webp">
-
-                    <div class="bublik">
-                        <button class="btn-open" data-modal-open>Більше</button>
+                <div class="card">
+                    <div class="card_poster">
+                        <img src="./Images/Stranger_Things.webp" width="200" height="300">
+                        <h3>Stranger Things</h3>
+                        <div class="bublik">
+                            <button class="btn-open" data-modal-open>Більше</button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="card">
-                <div class="card_poster">
-                    <img src="./Images/Harry_Potter.webp">
+                <div class="card">
+                    <div class="card_poster">
+                        <img src="./Images/Harry_Potter.webp" width="200" height="300">
+                        <h3>Harry Potter</h3>
+                        <div class="bublik">
+                            <button class="btn-open" data-modal-open2>Більше</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_poster">
+                        <img src="./Images/Dumb_n_Dumber.webp" width="200" height="300">
+                        <h3>Dumb and Dumber</h3>
+                        <div class="bublik">
+                            <button class="btn-open" data-modal-open3>Більше</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_poster">
+                        <img src="./Images/Bad_Boys.webp" width="200" height="300">
+                        <h3>Bad Boys</h3>
+                        <div class="bublik">
+                            <button class="btn-open" data-modal-open4>Більше</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_poster">
+                        <img src="./Images/Hail_Mary.webp" width="200" height="300">
+                        <h3>Hail Mary</h3>
+                        <div class="bublik">
+                            <button class="btn-open" data-modal-open5>Більше</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_poster">
+                        <img src="./Images/Scream.webp" width="200" height="300">
+                        <h3>Scream</h3>
+                        <div class="bublik">
+                            <button class="btn-open" data-modal-open6>Більше</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn-close" type="button" data-modal-close>×</button>
+                <div class="divs">
+                <img src="./Images/Stranger_Things.webp" width="200px" height="250px">
+                <div class="h4s">
+                    <h4>Жанр:</h4>
+                    <h4>Рік:</h4>
+                    <h4>Тривалість:</h4>
+                    <h4>Актори:</h4>
+                    </div>
+                    <div class="ps">
+                    <p> Пригоди/Хоррор</p>
+                    <p>2016/2026</p>
+                    <p>5 сезонів</p>
+                    <p> Фінн Вулфгард, Міллі Боббі Браун, Вайнона Райдер, Девід Гарбор, Гейтен Матараццо</p>
+                </div>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="card_poster">
-                    <img src="./Images/Dumb_n_Dumber.webp">
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_poster">
-                    <img src="./Images/Bad_Boys.webp">
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_poster">
-                    <img src="./Images/Hail_Mary.webp">
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_poster">
-                    <img src="./Images/Scream.webp">
-                </div>
-            </div>
-
         </div>
-    </main>
 
-    <div class="backdrop" data-modal>
-        <div class="modal">
-            <button class="btn-close" data-modal-close>✕</button>
-
-            <div>
-
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn-close" type="button" data-modal-close>×</button>
+                <div class="divs">
+                <img src="./Images/Stranger_Things.webp" width="200px" height="250px">
+                <div class="h4s">
+                    <h4>Жанр:</h4>
+                    <h4>Рік:</h4>
+                    <h4>Тривалість:</h4>
+                    <h4>Актори:</h4>
+                    </div>
+                    <div class="ps">
+                    <p> Пригоди/Хоррор</p>
+                    <p>2016/2026</p>
+                    <p>5 сезонів</p>
+                    <p> Фінн Вулфгард, Міллі Боббі Браун, Вайнона Райдер, Девід Гарбор, Гейтен Матараццо</p>
+                </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="app.js"></script>
-</body>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn-close" type="button" data-modal-close>×</button>
+                <div class="divs">
+                <img src="./Images/Stranger_Things.webp" width="200px" height="250px">
+                <div class="h4s">
+                    <h4>Жанр:</h4>
+                    <h4>Рік:</h4>
+                    <h4>Тривалість:</h4>
+                    <h4>Актори:</h4>
+                    </div>
+                    <div class="ps">
+                    <p> Пригоди/Хоррор</p>
+                    <p>2016/2026</p>
+                    <p>5 сезонів</p>
+                    <p> Фінн Вулфгард, Міллі Боббі Браун, Вайнона Райдер, Девід Гарбор, Гейтен Матараццо</p>
+                </div>
+                </div>
+            </div>
+        </div>
 
-</html>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn-close" type="button" data-modal-close>×</button>
+                <div class="divs">
+                <img src="./Images/Stranger_Things.webp" width="200px" height="250px">
+                <div class="h4s">
+                    <h4>Жанр:</h4>
+                    <h4>Рік:</h4>
+                    <h4>Тривалість:</h4>
+                    <h4>Актори:</h4>
+                    </div>
+                    <div class="ps">
+                    <p> Пригоди/Хоррор</p>
+                    <p>2016/2026</p>
+                    <p>5 сезонів</p>
+                    <p> Фінн Вулфгард, Міллі Боббі Браун, Вайнона Райдер, Девід Гарбор, Гейтен Матараццо</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn-close" type="button" data-modal-close>×</button>
+                <div class="divs">
+                <img src="./Images/Stranger_Things.webp" width="200px" height="250px">
+                <div class="h4s">
+                    <h4>Жанр:</h4>
+                    <h4>Рік:</h4>
+                    <h4>Тривалість:</h4>
+                    <h4>Актори:</h4>
+                    </div>
+                    <div class="ps">
+                    <p> Пригоди/Хоррор</p>
+                    <p>2016/2026</p>
+                    <p>5 сезонів</p>
+                    <p> Фінн Вулфгард, Міллі Боббі Браун, Вайнона Райдер, Девід Гарбор, Гейтен Матараццо</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button class="btn-close" type="button" data-modal-close>×</button>
+                <div class="divs">
+                <img src="./Images/Scream.webp" width="200px" height="250px">
+                <div class="h4s">
+                    <h4>Жанр:</h4>
+                    <h4>Рік:</h4>
+                    <h4>Тривалість:</h4>
+                    <h4>Актори:</h4>
+                    </div>
+                    <div class="ps">
+                    <p>Хоррор</p>
+                    <p>2026</p>
+                    <p>2год</p>
+                    <p>Нев Кемпбелл Кортні Кокс Патрік Демпсі Мейсон Гудінг Джасмін Савой Браун</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script src="app.js"></script>
+
+    </body>
+
+    </html>
