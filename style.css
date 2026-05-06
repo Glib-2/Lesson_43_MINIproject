@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--2-background);
 }
 
 :root {
@@ -46,6 +47,7 @@ a:hover {
     max-height: 100px;
     display: flex;
     justify-content: space-between;
+    z-index: 150;
 }
 
 nav ul {
@@ -169,9 +171,10 @@ main {
 
 .card:hover .bublik {
     display: block;
+
 }
 
-.card:hover{
+.card:hover {
     border: 15px var(--border-color);
 }
 
@@ -186,23 +189,32 @@ main {
     color: var(--border-color);
 }
 
-.btn-close{
+.btn-close {
     background-color: var(--border-color);
     border: 0px;
     color: var(--3-background);
     padding: 8px 8px 8px 8px;
+    position: relative;
 }
 
 .backdrop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
     background: rgba(71, 62, 155, 0.5);
+    z-index: 100;
 }
 
 .is-hidden {
     display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal {
@@ -212,25 +224,25 @@ main {
     margin: 100px auto;
     padding: 20px;
     transform: translate(-50% -50%);
-    margin-top: 300px;
+    margin-top: 230px;
     border-radius: 5px;
 }
 
-.catalog_grid{
+.catalog_grid {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 60px;
-    
+
 }
 
-.card_poster{
+.card_poster {
     text-align: center;
     background-color: var(--border-color);
     border-radius: 10px;
 }
 
-h3{
+h3 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -239,7 +251,8 @@ h3{
     margin-bottom: 50px;
 }
 
-h4, p{
+h4,
+p {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -257,17 +270,62 @@ h4, p{
     margin: 50px 50px 50px 50px;
 }
 
-.h4s, .ps {
+.h4s,
+.ps {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.h4s h4, .ps p {
+.h4s h4,
+.ps p {
     margin: 0;
     font-size: 20px;
 }
 
-img{
+img {
     border-radius: 10px;
+}
+
+.footer {
+    padding: 100px 100px 100px 220px;
+    background-color: var(--2-background);
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    gap: 150px;
+}
+
+.main_title_2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--title-color);
+    font-size: 30;
+    margin-left: 20px;
+}
+
+.p {
+    width: 300px;
+    text-align: center;
+}
+
+.nav .ul {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+.mini_main {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+}
+
+.third {
+    display: flex;
+    flex-direction: row;
 }
